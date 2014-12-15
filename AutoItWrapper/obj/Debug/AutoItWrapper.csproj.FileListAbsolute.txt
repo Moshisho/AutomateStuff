@@ -1,0 +1,9 @@
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\obj\Debug\AutoItWrapper.csprojResolveAssemblyReference.cache
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\AutoItWrapper.dll
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\AutoItWrapper.pdb
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\obj\Debug\AutoItWrapper.dll
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\obj\Debug\AutoItWrapper.pdb
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\32\AutoItX3.dll
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\32\ImageSearchDLL.dll
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\64\AutoItX3.dll
+C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutoItWrapper\bin\Debug\64\ImageSearchDLL.dll

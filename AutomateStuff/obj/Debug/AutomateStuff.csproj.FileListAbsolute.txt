@@ -1,0 +1,2 @@
+c:\users\moshea\documents\visual studio 2012\Projects\AutomateStuff\AutomateStuff\bin\Debug\AutomateStuff.exe.config
+c:\users\moshea\documents\visual studio 2012\Projects\AutomateStuff\AutomateStuff\obj\Debug\AutomateStuff.csprojResolveAssemblyReference.cache
