@@ -8,8 +8,8 @@ namespace AutomateStuff
 {
     interface IProgram
     {
-        public string Name { get; }
+        string Name { get; }
 
-        public object Run(object obj);
+        object Run(object obj);
     }
 }
