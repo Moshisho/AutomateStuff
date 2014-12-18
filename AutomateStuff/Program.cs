@@ -14,22 +14,13 @@ namespace AutomateStuff
             string logFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt");
             FileStream logger = File.OpenWrite(logFile);
 
-            string[] projes = Directory.GetFiles(@"C:\Automation\AutomatedTests", "*.csproj", SearchOption.AllDirectories);
+            string[] projes = Directory.GetFiles(@"C:\Automation\AlertsProject", "*.csproj", SearchOption.AllDirectories);
 
             Log(ref logger, "--- Projects: ---" + Environment.NewLine + String.Join(Environment.NewLine, projes) + Environment.NewLine + Environment.NewLine);
 
             foreach (string proj in projes)
             {
                 string projXml = File.ReadAllText(proj);
-
-                if (projXml.Contains(enable))
-                    projXml = projXml.Replace(enable, "");
-
-                if (projXml.Contains("<!--<RestorePackages>true</RestorePackages>-->"))
-                    projXml = projXml.Replace("<!--<RestorePackages>true</RestorePackages>-->", "");
-
-                if (projXml.Contains("<!--<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />-->"))
-                    projXml = projXml.Replace("<!--<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />-->", "");
 
                 if (projXml.Contains("<RestorePackages>true</RestorePackages>"))
                     projXml = projXml.Replace("<RestorePackages>true</RestorePackages>", "");
@@ -38,6 +29,9 @@ namespace AutomateStuff
                     Log(ref logger, "No old nuget for " + proj);
                     continue;
                 }
+
+                if (projXml.Contains(enable))
+                    projXml = projXml.Replace(enable, "");
 
                 if (projXml.Contains("<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />"))
                     projXml = projXml.Replace("<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />", "");
