@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MosheAzariaPayoTest", "MosheAzariaPayoTest\MosheAzariaPayoTest.csproj", "{97A19C83-83BA-456A-8D98-7774A5E6DEAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUtils", "TestUtils\TestUtils.csproj", "{95FDF030-9D2E-447F-8DA3-98BE3B1391EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDriversCommon", "WebDriversCommon\WebDriversCommon.csproj", "{AD9EDE30-050A-400E-85A1-029F576D5966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A19C83-83BA-456A-8D98-7774A5E6DEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A19C83-83BA-456A-8D98-7774A5E6DEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A19C83-83BA-456A-8D98-7774A5E6DEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A19C83-83BA-456A-8D98-7774A5E6DEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FDF030-9D2E-447F-8DA3-98BE3B1391EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FDF030-9D2E-447F-8DA3-98BE3B1391EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FDF030-9D2E-447F-8DA3-98BE3B1391EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FDF030-9D2E-447F-8DA3-98BE3B1391EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9EDE30-050A-400E-85A1-029F576D5966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9EDE30-050A-400E-85A1-029F576D5966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9EDE30-050A-400E-85A1-029F576D5966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9EDE30-050A-400E-85A1-029F576D5966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
