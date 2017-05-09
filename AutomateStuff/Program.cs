@@ -14,22 +14,16 @@ namespace AutomateStuff
             string logFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt");
             FileStream logger = File.OpenWrite(logFile);
 
-            string[] projes = Directory.GetFiles(@"C:\Automation\AutomatedTests", "*.csproj", SearchOption.AllDirectories);
+            string[] projes = Directory.GetFiles(@"C:\Automation\TFS", "*.csproj", SearchOption.AllDirectories);
 
             Log(ref logger, "--- Projects: ---" + Environment.NewLine + String.Join(Environment.NewLine, projes) + Environment.NewLine + Environment.NewLine);
 
             foreach (string proj in projes)
             {
+                if (!proj.Contains("Webhooks"))
+                    continue;
+
                 string projXml = File.ReadAllText(proj);
-
-                if (projXml.Contains(enable))
-                    projXml = projXml.Replace(enable, "");
-
-                if (projXml.Contains("<!--<RestorePackages>true</RestorePackages>-->"))
-                    projXml = projXml.Replace("<!--<RestorePackages>true</RestorePackages>-->", "");
-
-                if (projXml.Contains("<!--<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />-->"))
-                    projXml = projXml.Replace("<!--<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />-->", "");
 
                 if (projXml.Contains("<RestorePackages>true</RestorePackages>"))
                     projXml = projXml.Replace("<RestorePackages>true</RestorePackages>", "");
@@ -38,6 +32,9 @@ namespace AutomateStuff
                     Log(ref logger, "No old nuget for " + proj);
                     continue;
                 }
+
+                if (projXml.Contains(enable))
+                    projXml = projXml.Replace(enable, "");
 
                 if (projXml.Contains("<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />"))
                     projXml = projXml.Replace("<Import Project=\"$(SolutionDir)\\.nuget\\NuGet.targets\" Condition=\"Exists('$(SolutionDir)\\.nuget\\NuGet.targets')\" />", "");
@@ -67,6 +64,7 @@ namespace AutomateStuff
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition=""!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')"" Text=""$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))"" />
     <Error Condition=""!Exists('$(SolutionDir)\.nuget\NuGet.targets')"" Text=""$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))"" />
   </Target>";
     }

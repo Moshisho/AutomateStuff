@@ -1,5 +1,0 @@
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\UIAutomationTry\bin\Debug\UIAutomationTry.dll
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\UIAutomationTry\bin\Debug\UIAutomationTry.pdb
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\UIAutomationTry\obj\Debug\UIAutomationTry.csprojResolveAssemblyReference.cache
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\UIAutomationTry\obj\Debug\UIAutomationTry.dll
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\UIAutomationTry\obj\Debug\UIAutomationTry.pdb

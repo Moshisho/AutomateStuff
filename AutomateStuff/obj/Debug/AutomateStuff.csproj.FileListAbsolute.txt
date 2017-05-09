@@ -1,6 +1,0 @@
-c:\users\moshea\documents\visual studio 2012\Projects\AutomateStuff\AutomateStuff\bin\Debug\AutomateStuff.exe.config
-c:\users\moshea\documents\visual studio 2012\Projects\AutomateStuff\AutomateStuff\obj\Debug\AutomateStuff.csprojResolveAssemblyReference.cache
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutomateStuff\bin\Debug\AutomateStuff.exe
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutomateStuff\bin\Debug\AutomateStuff.pdb
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutomateStuff\obj\Debug\AutomateStuff.exe
-C:\Users\moshea\Documents\Visual Studio 2012\Projects\AutomateStuff\AutomateStuff\obj\Debug\AutomateStuff.pdb
